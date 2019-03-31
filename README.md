@@ -9,7 +9,7 @@ A concise [Mantle](https://github.com/Mantle/Mantle)-like way of working with [R
 ## Breaking Change
 
 - Method `- deepCopy` replaces the previous functionality of `- shallowCopy`, which no longer maintains an object's primary key
-- Updated to use native primary key support in Realm 0.85.0
+- Updated to use native primary key support in Realm 3.0.0
 - Update your code to use methods `-createOrUpdateInRealm:withJSONArray:` or `-createOrUpdateInRealm:withJSONDictionary:`
 - You must wrap these methods in a write transaction (between `[realm beginWriteTransaction];` and `[realm commitWriteTransaction];`)
 - These methods call `-createOrUpdateInRealm:withObject:` behind the scenes for performance.
@@ -18,7 +18,7 @@ A concise [Mantle](https://github.com/Mantle/Mantle)-like way of working with [R
 
 Add the following to your [CocoaPods](http://cocoapods.org/) Podfile
 
-    pod 'Realm+JSON', '~> 0.2'
+    pod 'Realm+JSON', '~> 0.3'
 
 or clone as a git submodule,
 
